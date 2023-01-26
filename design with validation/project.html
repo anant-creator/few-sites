@@ -1,0 +1,264 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30"/>
+    <style>
+      body {
+        font-size: 1.125rem;
+        color: #707070;
+        margin: 0;
+      }
+
+      .nav_container {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .page_title {
+        padding: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      
+      nav li {
+        margin: 0 1em;
+      }
+
+      nav a {
+        color: black;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        color: red;
+      }
+
+      #dodo {
+        font-size: 2em;
+        color: #0e0b07;
+        text-align: center;
+        position: relative;
+      }
+      
+      .container {
+        width: 95%;
+        max-width: 950px;
+        margin: 0 auto;
+
+      }
+      
+      .column {
+        display: flex;
+        justify-content: space-between;
+        margin: 1em 0;
+      }
+      
+      img {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+      
+      #dodo span {
+        color: red;
+      }
+
+      .col {
+        margin: 1em;
+      }
+      
+      .col-bg {
+        background: #212614;
+        color: #fff;
+        padding: 1em;
+      }
+      
+      p {
+        margin-top: 0;
+      }
+      
+      .col-1 {
+        width: 25%;
+      }
+      
+      .col-2 {
+        width: 50%;
+      }
+      
+      .col-3 {
+        width: 75%;
+      }
+
+      #corn {
+        text-align: center;
+      }
+
+      button:hover {
+        background:pink;
+      }
+
+      @media (max-width: 600px) {
+        .column {
+          flex-direction: column
+        }
+        .col {
+          width: 100%
+        }
+      }
+    </style>
+    <script>
+      function change() {
+        let select = document.getElementById('selectbox');
+        alert("My favourite singer is " + select.options[select.selectedIndex].value);
+        let p = document.getElementsByTagName('p');
+        for(var i=0;i<p.length; i+=2) {
+          p[i].style.color = "blue";
+        }
+      }
+
+      function styling() 
+      {
+        let p = document.getElementsByTagName('p');
+        p[0].style.fontStyle = "italic";
+        p[1].style.color = "red";
+        p[2].style.fontFamily = "cursive";
+        p[3].style.color = "cyan";
+        p[4].style.color = "blue";
+        p[5].style.fontWeight = "bold";
+        let select = document.getElementById('selectbox');
+        alert("My favourite singer is " + select.options[select.selectedIndex].value);
+      }
+
+      function classmodifier() {
+        var done = document.getElementsByClassName('col');
+        
+        for (var x= 0; x<done.length;x++) {
+          done[x].style.color = "magenta";
+        }
+      }
+
+      function setNewImage() {
+        document.getElementById('identification').src = "https://i.pinimg.com/564x/b8/a6/80/b8a680f6d3a0a83b2416613e99287795.jpg";
+      }
+
+      function setOldImage() {
+        document.getElementById('identification').src = "https://www.allartclassic.com/img/author_pictures/long-canvas-art-colorful-woods.jpg";
+      }
+
+      function validate() {
+        var user = document.getElementById('input');
+        var pass = document.getElementById('pass');
+        var label1 = document.getElementById('bill1');
+        var label2 = document.getElementById('bill2');
+        var regx = /Anant/
+
+        if (user.value.trim() == "") {
+          user.style.border = "solid 1px red"
+          pass.style.border = "solid 1px black"
+          label1.style.visibility = "visible"
+          label2.style.visibility = "hidden"
+          return false
+        } else if (pass.value.trim() == "") {
+          pass.style.border = "solid 1px red"
+          user.style.border = "solid 1px black"
+          label2.style.visibility = "visible"
+          label1.style.visibility = "hidden"
+          return false
+        } else if (user.value >= "Anantg2546" && pass.value == "22334455") {
+          return true
+        } else {
+          alert("Invalid Username or password")
+          return false
+        }
+      }
+
+    </script>
+  </head>
+  <body>
+    
+      <div class="container">
+        <header>
+          <div class="nav_container">
+            <div class="page_title">
+              <img src="https://storage.googleapis.com/ehimages/2019/11/27/img_1b3959890122b14423e66375c74d78f5_1574848827324_processed_original.jpg" width="200px">
+              <p id="dodo"><span>Art</span> is my life</p>
+            </div>
+
+
+            <nav>
+                <ul>
+                  <li><a target="_blank" href="Copy_project.html">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            
+          </div>
+        </header>
+
+        <img id="identification" onmouseover="setNewImage()" onmouseout="setOldImage()" src="https://www.allartclassic.com/img/author_pictures/long-canvas-art-colorful-woods.jpg" width="80%" height="30%">
+
+      <div class="column">
+        <div class="col col-1">
+          <h2>bla bla bla</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget gravida ante. Ut leo turpis, sollicitudin in gravida sed, accumsan at nulla. Nulla lacinia id diam vitae scelerisque. Sed et nisi a massa aliquet tincidunt in ac est. Integer sodales turpis arcu, eget lobortis tortor pulvinar ac. Sed semper leo lectus, eget gravida sapien dapibus et. In vel mauris quis massa accumsan iaculis ut et ex.</p>
+        </div>
+        
+        <div class="col col-2">
+          <h2>bla bla bla</h2>
+          <p>Donec ultrices eget massa id lobortis. Donec et purus condimentum, placerat sapien ut, pretium orci. Nulla in diam eget turpis tincidunt dictum. Cras tempus sapien libero, nec posuere augue condimentum a. Morbi feugiat tempus libero, id feugiat erat consectetur id. Nulla convallis purus sed lobortis aliquet. Vivamus vitae leo faucibus velit mattis accumsan. Duis ac tempor mi. Vivamus ac magna dignissim, imperdiet lacus vitae, mollis purus.</p>
+          
+          <p>Donec sed maximus odio, in vehicula neque. Duis porttitor nisl ac odio imperdiet, malesuada dictum orci venenatis. Sed aliquam efficitur congue. Fusce malesuada lacinia finibus. Nunc quis tristique lorem. Nullam et vehicula risus, ac maximus tellus. Mauris et nisi dapibus, fermentum enim nec, pellentesque sapien.</p>
+        </div>
+        
+        <div class="col col-1 col-bg">
+          <p>Pellentesque nec dapibus sapien, ut blandit ipsum. Phasellus neque arcu, tristique et interdum id, porttitor eu felis. Sed vel faucibus magna, ut mattis tellus. Maecenas nec auctor purus. Curabitur molestie, neque ac pretium varius, odio purus varius neque, ac porttitor neque nisi ac velit. Nunc condimentum leo nec purus blandit, in convallis eros condimentum. Mauris a vestibulum nisl, ac efficitur libero. Fusce ut augue a sem porta tincidunt.</p>
+        </div>
+        
+      </div>
+      <div class="column">
+        <div class="col col-3">
+          <h2>Lorem Ipsum</h2>
+          <p>Mauris fermentum sem id odio imperdiet, ac mollis libero iaculis. Vivamus consequat ligula a eros feugiat, quis dictum diam pellentesque. Praesent at lectus sit amet elit pharetra suscipit id ut mi. Vestibulum non lacus at velit commodo ullamcorper. Nulla facilisi. Morbi at lacinia felis. Mauris aliquet magna magna, ac consectetur mi ultricies sed. Proin luctus libero quis quam suscipit, vestibulum sagittis orci tempus. Aliquam tincidunt porta vulputate. Etiam sapien augue, iaculis nec urna at, volutpat laoreet lacus. Mauris sodales quis justo vel fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus accumsan gravida massa sed mollis. Etiam tincidunt ornare mauris, eget iaculis lacus gravida eget.</p>
+        </div>
+        
+        <div class="col col-1 col-bg">
+          <p>Donec elementum risus mi, ut suscipit dolor aliquet at. Etiam vehicula turpis molestie, aliquet ligula vel, viverra est. Ut orci augue, tempor non tellus a, imperdiet efficitur metus. Aliquam volutpat pellentesque dolor sit amet eleifend. Integer imperdiet orci augue, id dignissim ipsum cursus in. Duis eget blandit nisi, sed venenatis sem. Sed posuere odio sit amet libero congue, et tincidunt dui congue.</p>
+        </div>
+        
+      </div>
+      
+      </div>
+      
+    </div>
+    
+    <form id="corn" onsubmit="return validate()" method="post" action="jumble.html">
+      <select id="selectbox">
+        <option value="Palak Muchal">Palak Muchal</option>
+        <option value="Neha Kakkar">Neha Kakkar</option>
+        <option value="khushbu Girewal">Khushbu Girewal</option>
+        <option value="Arijit Singh">Arijit Singh</option>
+        <option value="Armaan Malik">Armaan Malik</option>
+        <option value="Udit Narayan"> Udit Narayan</option>
+        </option>
+      </select><br>
+    
+      <label id="bill1" style="color:red; visibility: hidden">Invalid</label>
+      <input type="text" id="input" placeholder="Username:- " required/><br>
+      <label id="bill2" style="color:red; visibility: hidden">Invalid</label>
+      <input type="password" id="pass" placeholder="Enter password:- " required/><br>
+      <button onclick="validate()">check</button>
+    </form>
+  </body>
+  
+</html>

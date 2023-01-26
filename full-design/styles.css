@@ -1,0 +1,577 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Typography */
+.nav a,
+.widget a,
+.footer-bottom a {
+  color: white;
+}
+
+.nav a:hover,
+.widget a:hover,
+.footer-bottom a:hover {
+  color: #8eb2f1;
+}
+
+.top-nav {
+  padding-top: 0.25em;
+  height: 25px;
+}
+
+p {
+  font-family: "Shippori Mincho", serif;
+  font-size: 0.8rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Shippori Mincho", serif;
+}
+
+.navy {
+  background: #152e5a !important;
+  color: white !important;
+  font-family: "Shippori Mincho", serif;
+}
+
+.uline {
+  border-bottom: 3px solid #0d3681;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.foot-sep {
+  border-bottom: 3px solid #fff;
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.detail {
+  font-size: 1rem;
+  margin-left: 50px;
+}
+
+.site-main {
+  margin: 20px auto;
+}
+
+.section-title::before {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+  display: inline-block;
+  bottom: 10px;
+  right: 5px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: #000;
+  display: inline-block;
+  bottom: 10px;
+  left: 5px;
+  position: relative;
+}
+
+.section-title1::before {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  display: inline-block;
+  bottom: 10px;
+  right: 5px;
+  position: relative;
+}
+
+.section-title1::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  display: inline-block;
+  bottom: 10px;
+  left: 5px;
+  position: relative;
+}
+
+.white {
+  color: white;
+}
+
+.nav-section ul,
+.widget ul {
+  list-style: none;
+}
+
+.content-inner {
+  padding: 1em 0;
+}
+
+.content-inner p {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1rem;
+}
+
+.widget {
+  margin: 1em 0;
+}
+
+.footer-top {
+  padding: 1em 0;
+}
+
+.blogs {
+  width: 100%;
+  height: auto;
+  padding: 1em 0;
+  margin: 2em 0;
+}
+
+/* Header */
+
+.nav-back {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://scontent.fagr2-1.fna.fbcdn.net/v/t1.6435-9/164621382_2181412865322872_5961395517064226722_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=730e14&_nc_ohc=i-YbDJktLesAX9FE5gH&tn=Vnbzx0kqwnxkKjY0&_nc_ht=scontent.fagr2-1.fna&oh=cb7283d4411fc998b53495fa71bc0c0f&oe=60DB2548");
+  background-repeat: no-repeat;
+}
+
+.bgimage {
+  width: 100%;
+  height: 100%;
+}
+
+.social-links {
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0;
+  font-size: 0.8rem;
+}
+
+/* Card design No. 1 */
+
+#card1 {
+  background: #ececec;
+  padding: 1em 0;
+}
+
+#card1 .card {
+  height: 300px;
+  width: 100%;
+  max-width: 300px;
+  background: #fff;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin: 3em auto;
+}
+
+#card1 .c1 {
+  background-image: url("https://scontent.fagr2-1.fna.fbcdn.net/v/t1.6435-9/167399325_2181318555332303_2803604038319189162_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=Yx1kXRZicoAAX868P7Y&tn=Vnbzx0kqwnxkKjY0&_nc_ht=scontent.fagr2-1.fna&oh=636a8535d24acef074eb8245d57d5181&oe=60DB40D0");
+  background-size: cover;
+}
+
+#card1 .c2 {
+  background-image: url("https://scontent.fagr2-1.fna.fbcdn.net/v/t1.6435-9/166926302_2181318825332276_1619585937051548345_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=1tMDPodTuGEAX9Dw_mw&_nc_ht=scontent.fagr2-1.fna&oh=f948c28ae287645a8b45f7e93596e093&oe=60DB96B1");
+  background-size: cover;
+}
+
+#card1 .c3 {
+  background-image: url("https://scontent.fagr2-1.fna.fbcdn.net/v/t1.6435-9/165254572_2181319225332236_700254190689328154_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=bMpHK1-tYMIAX-aNUX0&tn=Vnbzx0kqwnxkKjY0&_nc_ht=scontent.fagr2-1.fna&oh=1550c91b5a8961398235efc9a1c2c2b1&oe=60DAA203");
+  background-size: cover;
+}
+
+#card1 .c4 {
+  background-image: url("https://scontent.fagr2-1.fna.fbcdn.net/v/t1.6435-9/164343639_2181319351998890_9089484156285943785_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=JRA55R1hYc4AX-7FFRY&_nc_ht=scontent.fagr2-1.fna&oh=b2d2adecfb6c85ecf89b80b9d26ece29&oe=60DA3BB8");
+  background-size: cover;
+}
+
+#card1 .cover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(255, 162, 0, 0.7);
+  top: 70%;
+  transition: top 1s;
+}
+
+#card1 .cover:hover {
+  top: 0;
+}
+
+#card1 .cover:hover .matter {
+  margin-top: 120px;
+}
+
+#card1 .card:hover .cover {
+  top: 0;
+}
+
+#card1 .card:hover .matter {
+  margin-top: 120px;
+}
+
+#card1 .matter {
+  transition: margin-top 1s;
+  margin-top: 5%;
+}
+
+#card1 .opac {
+  opacity: 1;
+  margin: 0 0 0.5em 0;
+  font-size: 1rem;
+}
+/* Card design No. 1 end */
+
+/* Card design No. 2 */
+
+#card2 .card {
+  height: 250px;
+  width: 100%;
+  max-width: 250px;
+  background: #fff;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  border-radius: 20px;
+  margin: 3em auto;
+}
+
+#card2 .d1 {
+  background-image: url("https://scontent.fagr2-1.fna.fbcdn.net/v/t1.6435-9/167399325_2181318555332303_2803604038319189162_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=Yx1kXRZicoAAX868P7Y&tn=Vnbzx0kqwnxkKjY0&_nc_ht=scontent.fagr2-1.fna&oh=636a8535d24acef074eb8245d57d5181&oe=60DB40D0");
+  background-size: cover;
+}
+
+#card2 .d2 {
+  background-image: url("https://scontent.fagr2-1.fna.fbcdn.net/v/t1.6435-9/166926302_2181318825332276_1619585937051548345_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=1tMDPodTuGEAX9Dw_mw&_nc_ht=scontent.fagr2-1.fna&oh=f948c28ae287645a8b45f7e93596e093&oe=60DB96B1");
+  background-size: cover;
+}
+
+#card2 .d3 {
+  background-image: url("https://scontent.fagr2-1.fna.fbcdn.net/v/t1.6435-9/165254572_2181319225332236_700254190689328154_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=bMpHK1-tYMIAX-aNUX0&tn=Vnbzx0kqwnxkKjY0&_nc_ht=scontent.fagr2-1.fna&oh=1550c91b5a8961398235efc9a1c2c2b1&oe=60DAA203");
+  background-size: cover;
+}
+
+#card2 .d4 {
+  background-image: url("https://scontent.fagr2-1.fna.fbcdn.net/v/t1.6435-9/164343639_2181319351998890_9089484156285943785_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=JRA55R1hYc4AX-7FFRY&_nc_ht=scontent.fagr2-1.fna&oh=b2d2adecfb6c85ecf89b80b9d26ece29&oe=60DA3BB8");
+  background-size: cover;
+}
+
+#card2 .cover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #1d3a5f;
+  top: 70%;
+  transition: top 1s;
+}
+
+#card2 .cover:hover {
+  top: 0;
+}
+
+#card2 .cover:hover .matter {
+  margin-top: 140px;
+}
+
+#card2 .card:hover .cover {
+  top: 0;
+}
+
+#card2 .card:hover .matter {
+  margin-top: 110px;
+}
+
+#card2 .matter {
+  color: white;
+  transition: margin-top 1s;
+  margin-top: 5%;
+}
+
+/* Card design No. 2 end */
+
+/* Card design No. 3 */
+
+#card3 {
+  background: #ececec;
+}
+
+#card3 .card {
+  height: 200px;
+  width: 80%;
+  max-width: 220px;
+  background: #fff;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  border-radius: 20px;
+  margin: 1em auto;
+}
+
+#card3 .e1 {
+  background-image: url("https://scontent.fagr2-1.fna.fbcdn.net/v/t1.6435-9/167399325_2181318555332303_2803604038319189162_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=Yx1kXRZicoAAX868P7Y&tn=Vnbzx0kqwnxkKjY0&_nc_ht=scontent.fagr2-1.fna&oh=636a8535d24acef074eb8245d57d5181&oe=60DB40D0");
+  background-size: cover;
+}
+
+#card3 .e2 {
+  background-image: url("https://scontent.fagr2-1.fna.fbcdn.net/v/t1.6435-9/166926302_2181318825332276_1619585937051548345_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=1tMDPodTuGEAX9Dw_mw&_nc_ht=scontent.fagr2-1.fna&oh=f948c28ae287645a8b45f7e93596e093&oe=60DB96B1");
+  background-size: cover;
+}
+
+#card3 .e3 {
+  background-image: url("https://scontent.fagr2-1.fna.fbcdn.net/v/t1.6435-9/165254572_2181319225332236_700254190689328154_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=bMpHK1-tYMIAX-aNUX0&tn=Vnbzx0kqwnxkKjY0&_nc_ht=scontent.fagr2-1.fna&oh=1550c91b5a8961398235efc9a1c2c2b1&oe=60DAA203");
+  background-size: cover;
+}
+
+#card3 .e4 {
+  background-image: url("https://scontent.fagr2-1.fna.fbcdn.net/v/t1.6435-9/164343639_2181319351998890_9089484156285943785_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=JRA55R1hYc4AX-7FFRY&_nc_ht=scontent.fagr2-1.fna&oh=b2d2adecfb6c85ecf89b80b9d26ece29&oe=60DA3BB8");
+  background-size: cover;
+}
+
+#card3 .e5 {
+  background-image: url("https://scontent.fagr2-1.fna.fbcdn.net/v/t1.6435-9/167399325_2181318555332303_2803604038319189162_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=Yx1kXRZicoAAX868P7Y&tn=Vnbzx0kqwnxkKjY0&_nc_ht=scontent.fagr2-1.fna&oh=636a8535d24acef074eb8245d57d5181&oe=60DB40D0");
+  background-size: cover;
+}
+
+#card3 .e6 {
+  background-image: url("https://scontent.fagr2-1.fna.fbcdn.net/v/t1.6435-9/166926302_2181318825332276_1619585937051548345_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=1tMDPodTuGEAX9Dw_mw&_nc_ht=scontent.fagr2-1.fna&oh=f948c28ae287645a8b45f7e93596e093&oe=60DB96B1");
+  background-size: cover;
+}
+
+#card3 .e7 {
+  background-image: url("https://scontent.fagr2-1.fna.fbcdn.net/v/t1.6435-9/165254572_2181319225332236_700254190689328154_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=bMpHK1-tYMIAX-aNUX0&tn=Vnbzx0kqwnxkKjY0&_nc_ht=scontent.fagr2-1.fna&oh=1550c91b5a8961398235efc9a1c2c2b1&oe=60DAA203");
+  background-size: cover;
+}
+
+#card3 .e8 {
+  background-image: url("https://scontent.fagr2-1.fna.fbcdn.net/v/t1.6435-9/164343639_2181319351998890_9089484156285943785_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=JRA55R1hYc4AX-7FFRY&_nc_ht=scontent.fagr2-1.fna&oh=b2d2adecfb6c85ecf89b80b9d26ece29&oe=60DA3BB8");
+  background-size: cover;
+}
+
+#card3 .cover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #1d3a5f;
+  top: 70%;
+  transition: top 1s;
+}
+
+#card3 .cover:hover {
+  top: 0;
+}
+
+#card3 .cover:hover .matter {
+  margin-top: 90px;
+}
+
+#card3 .card:hover .cover {
+  top: 0;
+}
+
+#card3 .card:hover .matter {
+  margin-top: 90px;
+}
+
+#card3 .matter {
+  color: white;
+  transition: margin-top 1s;
+  margin-top: 5%;
+}
+
+/* Card design No. 3 end */
+
+/* Testimonials */
+.test {
+  width: 100%;
+  height: 400px;
+  padding: 1em 0;
+  margin: 2em 0;
+}
+
+/* Card design No. 4 (Blogs) */
+
+#card4 .card {
+  height: 250px;
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin: 0.5em 0;
+}
+
+#card4 .f1 {
+  background-image: url("https://static.businessworld.in/article/article_extra_large_image/1598082827_j1CeH4_upskilling_employees_in_the_world_of_digital_transformation_how_to_retain_and_engage_your_workforce_1024x574.png");
+  background-size: cover;
+}
+
+#card4 .f2 {
+  background-image: url("https://static.businessworld.in/article/article_extra_large_image/1598082827_j1CeH4_upskilling_employees_in_the_world_of_digital_transformation_how_to_retain_and_engage_your_workforce_1024x574.png");
+  background-size: cover;
+}
+
+#card4 .f3 {
+  background-image: url("https://static.businessworld.in/article/article_extra_large_image/1598082827_j1CeH4_upskilling_employees_in_the_world_of_digital_transformation_how_to_retain_and_engage_your_workforce_1024x574.png");
+  background-size: cover;
+}
+
+#card4 .f4 {
+  background-image: url("https://static.businessworld.in/article/article_extra_large_image/1598082827_j1CeH4_upskilling_employees_in_the_world_of_digital_transformation_how_to_retain_and_engage_your_workforce_1024x574.png");
+  background-size: cover;
+}
+
+#card4 .cover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #adadad;
+  transition: top 1s;
+  opacity: 0.9;
+  top: 50%;
+}
+
+#card4 .matter {
+  color: white;
+}
+
+#card4 .col-md-7 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#card4 .col-md-5 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#card4 .head {
+  font-size: 1.5rem;
+}
+
+#card4 .info {
+  font-size: 0.7rem;
+}
+
+#card4 .cover:hover {
+  top: 0;
+}
+
+#card4 .cover:hover .matter {
+  margin-top: 90px;
+}
+
+#card4 .card:hover .cover {
+  top: 0;
+}
+
+#card4 .card:hover .matter {
+  margin-top: 90px;
+}
+
+#card4 .matter {
+  color: white;
+  transition: margin-top 1s;
+  margin: 1% 0;
+}
+
+/* Card design No. 4 (Blogs) end */
+
+/* Portfolio */
+#WebDesign,
+#Arch3d,
+#MediaMarket,
+#UXUI {
+  background: #ececec;
+}
+
+#Arch3d {
+  background: #ececec;
+}
+
+/* Hand Shake Image */
+.img-holder1 {
+  height: 400px;
+  width: 100%;
+  background-image: url("https://media3.s-nbcnews.com/j/newscms/2020_14/1554952/hank-shake-continue-today-main-200403_fe1d3d927229f336440bea5c5d9b68a4.fit-2000w.jpg");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  position: relative;
+}
+
+.coat {
+  background-color: rgba(0, 0, 0, 0.3); /* <-- this line is modified */
+  padding: 1em 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img-holder1 .head {
+  font-weight: normal;
+  color: white;
+  font-size: 1.5rem;
+  margin: 2em 0;
+}
+
+.img-holder1 .txt-sm {
+  font-weight: normal;
+  color: white;
+  font-size: 1rem;
+  margin: 0.5em 0;
+}
+
+/* Hand Shake Image Done */
+
+/* Blue Dots Image start */
+
+.img-holder2 {
+  width: 100%;
+  height: 300px;
+  background: url("http://www.seekgif.com/uploads/blue-bubble-wallpapers-5.jpeg"),
+    rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+  background-size: cover;
+  padding: 1em 0;
+}
+
+.img-holder2 .head {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 1em 0;
+  font-weight: 500;
+}
+
+.img-holder2 .txt-sm {
+  font-weight: normal;
+  font-size: 1rem;
+  margin: 0.5em 0;
+}
+
+/* Blue Dots Image end */
+
+/* Form */
+.form-back {
+  height: auto;
+  background: #ececec;
+  background-size: cover;
+  padding: 1em 0;
+}
+
+.msg-box {
+  height: 120px;
+}
